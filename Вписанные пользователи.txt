@@ -1,0 +1,26 @@
+string log = Login.Text;
+switch (log)
+{
+    case "Frank":
+        {
+            if (Password.Text == "12345678")
+            {
+                Window_Frank window = new Window_Frank();
+                window.Show();
+                Form1 form1 = new Form1();
+                form1.Close();
+            }
+            break;
+        }
+    case "Truty":
+        {
+            if(Password.Text == "87654321")
+            {
+                Window window = new Window();
+                window.Show();
+                Form1 form1 = new Form1();
+                form1.Close();
+            }
+            break;
+        }
+}
